@@ -36,5 +36,3 @@ TBD
 - Data provided by OpenAlex.org.
 - University of Regina for inspiring this project.
 
-## Contact
-For any questions or feedback, please contact **Antara Newaz** at **anc812@uregina.ca**.
