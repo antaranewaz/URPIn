@@ -1,0 +1,11 @@
+.title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--mantine-color-light-5);
+}
+
+.stat {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--mantine-color-light-7);
+}

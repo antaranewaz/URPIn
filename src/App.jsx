@@ -1,40 +1,30 @@
-import { AppShell, Burger, Group, Skeleton } from "@mantine/core"
-import { useDisclosure } from "@mantine/hooks"
-// import { MantineLogo } from "@mantinex/mantine-logo"
+import { AppShell } from "@mantine/core";
+import Router from "./Router";
+import Navbar from "./components/Navbar";
 
-const App = () => {
-  const [opened, {toggle}] = useDisclosure();
+function App() {
   return (
     <AppShell
-      header={{ height: 60}}
-      navbar={{ width: 300, breakpoint: 'sm', collapsed: { mobile: !opened}}}
+      header={{ height: 0 }}
+      navbar={{
+        width: 300,
+        breakpoint: "sm",
+      }}
       padding="md"
     >
-      <AppShell.Header>
-        <Group h="100%" px="md">
-          <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-          <strong>URPIn</strong>
-        </Group>
-      </AppShell.Header>
-
       <AppShell.Navbar
         p="md"
+        withBorder={false}
+        style={{ backgroundColor: "#292931" }}
       >
-        {/* Navbar */}
-        {
-          Array(15)
-          .fill(0)
-          .map((_, index) => (
-            <Skeleton key={index} h={28} mt="sm" animate={false} />
-          ))
-        }
+        <Navbar />
       </AppShell.Navbar>
 
       <AppShell.Main>
-        Main
+        <Router />
       </AppShell.Main>
     </AppShell>
-  )
+  );
 }
 
-export default App
+export default App;

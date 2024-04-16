@@ -1,0 +1,28 @@
+.container {
+  background-color: #292931;
+  margin-top: 5vh;
+  /* padding: 5rem 2rem 2rem 2rem; */
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.infoColumn {
+  background-color: rgba(97, 97, 97, 0.251);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.infoColumn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.donut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

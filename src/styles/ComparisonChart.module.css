@@ -1,0 +1,16 @@
+.container {
+  background-color: #292931;
+  margin-top: 5vh;
+  /* padding: 5rem 2rem 2rem 2rem; */
+  border-radius: 10px;
+}
+
+.recharts-legend-wrapper {
+  color: red !important;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
