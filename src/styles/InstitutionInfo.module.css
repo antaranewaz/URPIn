@@ -8,13 +8,14 @@
 
 .infoColumn {
   background-color: rgba(97, 97, 97, 0.251);
-  border-radius: 4px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
   margin-bottom: 1rem;
+  height: 120px;
 }
 
 .infoColumn:not(:last-child) {

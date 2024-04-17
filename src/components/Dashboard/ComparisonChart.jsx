@@ -144,7 +144,8 @@ const ComparisonChart = ({ iID }) => {
         >
           {chartData.length > 0 ? (
             <LineChart
-              h={400}
+              h="40vh"
+              mt="xl"
               data={chartData}
               dataKey="year"
               valueFormatter={(value) =>

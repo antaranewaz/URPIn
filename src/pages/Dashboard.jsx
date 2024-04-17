@@ -59,19 +59,31 @@ const Dashboard = () => {
 
       <Grid grow>
         <Grid.Col span={2} className={classes.gridColumnContainer}>
-          <StatSummary title="Total Publications" data={worksCount} />
+          <StatSummary title="Total Publications" data={worksCount} info="" />
         </Grid.Col>
         <Grid.Col span={2} className={classes.gridColumnContainer}>
-          <StatSummary title="Total Citations" data={citationsCount} />
+          <StatSummary title="Total Citations" data={citationsCount} info="" />
         </Grid.Col>
         <Grid.Col span={2} className={classes.gridColumnContainer}>
-          <StatSummary title="Impact Factor" data={impactFactor} />
+          <StatSummary
+            title="Impact Factor"
+            data={impactFactor}
+            info="Impact Factor assesses the average influence of a journal's articles."
+          />
         </Grid.Col>
         <Grid.Col span={2} className={classes.gridColumnContainer}>
-          <StatSummary title="h-index" data={hIndex} />
+          <StatSummary
+            title="h-index"
+            data={hIndex}
+            info="Evaluates the cumulative impact of an individual researcher's or journal's publications."
+          />
         </Grid.Col>
         <Grid.Col span={2} className={classes.gridColumnContainer}>
-          <StatSummary title="i10-index" data={i10Index} />
+          <StatSummary
+            title="i10-index"
+            data={i10Index}
+            info="The i10-index is a metric that indicates the number of academic publications an author has written that have been cited at least ten times by others."
+          />
         </Grid.Col>
       </Grid>
 

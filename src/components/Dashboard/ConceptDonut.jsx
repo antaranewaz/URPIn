@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Loader } from "@mantine/core";
+import { Loader, Text } from "@mantine/core";
 import { DonutChart } from "@mantine/charts";
 import classes from "../../styles/ConceptDonut.module.css";
 
@@ -39,7 +39,18 @@ const ConceptBar = (props) => {
 
   useEffect(() => {
     if (data) {
-      const colors = ["indigo.6", "yellow.6", "teal.6", "red.6", "pink.6"];
+      const colors = [
+        "indigo.6",
+        "yellow.6",
+        "teal.6",
+        "red.6",
+        "pink.6",
+        "grape.6",
+        "cyan.6",
+        "lime.6",
+        "violet.6",
+        "orange.6",
+      ];
       const usedColors = new Set();
 
       const getRandomColor = () => {
@@ -64,6 +75,7 @@ const ConceptBar = (props) => {
 
   return (
     <div className={classes.container}>
+      <Text className={classes.header}>Contribution Donut</Text>
       {donutData.length > 0 ? (
         <DonutChart
           withLabelsLine
@@ -72,7 +84,7 @@ const ConceptBar = (props) => {
           strokeWidth={0}
           thickness={25}
           data={donutData}
-          chartLabel="Concepts"
+          // chartLabel="Concepts"
           valueFormatter={(value) =>
             new Intl.NumberFormat("en-US").format(value)
           }

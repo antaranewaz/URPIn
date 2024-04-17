@@ -1,13 +1,19 @@
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  margin: 1.5rem;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .donut {
   scale: 1.2;
-  color: white !important
 }
 
 /* text.m_ddb0bfe3.mantine-DonutChart-label {
